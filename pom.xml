@@ -5,8 +5,12 @@
     <groupId>com.xiaomi</groupId>
     <artifactId>bms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>bms</name>
     <description>Demo project for Spring Boot</description>
+    <modules>
+        <module>BatteryPro</module>
+    </modules>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

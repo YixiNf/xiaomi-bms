@@ -28,6 +28,9 @@ public class WarningAppServiceImpl implements WarningAppService {
     private WarningService warningService;
 
     @Autowired
+    private SignalAppService signalAppService;
+
+    @Autowired
     private SignalRepository signalRepository;
 
     @Autowired
@@ -90,7 +93,7 @@ public class WarningAppServiceImpl implements WarningAppService {
                 }
 
                 // 5. 保存原始信号数据到数据库
-                signalRepository.saveSignal(carId, signal);
+                signalAppService.saveSignal(carId, signal);
 
 
             } catch (IOException e) {
